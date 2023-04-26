@@ -1,18 +1,19 @@
 <template>
-<v-sheet
+  <v-sheet
     height="400"
     class="overflow-hidden"
-    style="position: relative;"
     dark
   >
         <v-btn
+        x-large
         rounded
         outlined
-        
         icon
-        color=""
+        fixed
         dark
         @click.stop="drawer = !drawer"
+        style="top:30px;right: 30px;"
+        class="sidebar-border"
         >
           <v-icon>
             mdi-menu
@@ -59,10 +60,20 @@ export default {
       return {
         drawer: null,
         items: [
-          { title: 'Home', icon: 'mdi-view-dashboard' },
-          { title: 'About', icon: 'mdi-forum' },
+          { title: 'Home', icon: 'mdi-home' },
+          { title: 'About', icon: 'mdi-account' },
+          { title: 'Resume', icon: 'mdi-briefcase' },
+          { title: 'Skills', icon: 'mdi-head-cog' },
+          { title: 'Projects', icon: 'mdi-pencil-ruler' },
+          { title: 'Contact', icon: 'mdi-email' },
         ],
       }
     },
 }
 </script>
+
+<style>
+.sidebar-border{
+  border-color: #565656;
+}
+</style>

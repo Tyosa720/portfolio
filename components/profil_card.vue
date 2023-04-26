@@ -2,13 +2,13 @@
     <v-card outlined dark flat class="rounded-xl border-card" width="100%" max-width="350px">
         <div class="d-flex justify-space-between">
             <v-card-title>
-            Théophile Lioppé 
+                Théophile Lioppé 
             </v-card-title>
             <v-card-title>
-           Étudiant 
+                Student
             </v-card-title>
         </div>
-        <v-img :src="require('../assets/me.jpg')"></v-img>
+        <img src="../assets/me.jpg" class="profil">
         <div class="text-center pt-4">
            <h3>lioppe.theophile@hotmail.com</h3> 
            <h3>Based in Rouen</h3>
@@ -54,5 +54,12 @@ export default{
 <style>
 .border-card{
     border:1px solid #565656 !important;
+}
+.profil{
+    max-width: 250px;
+    text-align: center;
+    display: block;
+    border-radius: 24px;
+    margin: auto;
 }
 </style>

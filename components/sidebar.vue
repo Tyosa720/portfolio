@@ -26,14 +26,14 @@
       absolute
       temporary
       right
+      style="position: fixed; width: 312px;"
+      class="pa-14"
     >
       <v-list-item>
         <v-list-item-content>
-          <v-list-item-title>Menu</v-list-item-title>
+          <v-list-item-title style="opacity: 0.8;">Menu</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
-
-      <v-divider></v-divider>
 
       <v-list dense>
         <v-list-item

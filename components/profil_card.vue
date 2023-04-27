@@ -1,5 +1,5 @@
 <template>
-    <v-card outlined dark flat class="rounded-xl border-card" width="100%" max-width="350px">
+    <v-card outlined dark flat class="position-card rounded-xl border-card" width="100%" max-width="350px">
         <div class="d-flex justify-space-between">
             <v-card-title>
                 Théophile Lioppé 
@@ -52,6 +52,19 @@ export default{
 </script>
 
 <style>
+@media screen and (max-width:1220px){
+    .position-card{
+        position: initial !important;
+        max-width: 700px !important;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+}
+.position-card{
+    position: fixed;
+
+}
 .border-card{
     border:1px solid #565656 !important;
 }

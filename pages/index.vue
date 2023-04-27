@@ -6,6 +6,7 @@
     </div>
     <div>
       <Skills id="skills"></Skills>
+      <Resume></Resume>
     </div>
   </div>
 </template>
@@ -14,10 +15,10 @@
 import Profil_card from '../components/profil_card.vue';
 import Sidebar from '../components/sidebar.vue';
 import Skills from '../components/skills.vue';
-
+import Resume from '../components/resume.vue';
 export default {
     name: "IndexPage",
-    components: { Profil_card, Sidebar, Skills }
+    components: { Profil_card, Sidebar, Skills, Resume }
 }
 </script>
 

@@ -40,6 +40,7 @@
           v-for="item in items"
           :key="item.title"
           link
+          href="#skills"
         >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
@@ -60,10 +61,10 @@ export default {
       return {
         drawer: null,
         items: [
-          { title: 'Home', icon: 'mdi-home' },
+          { title: 'Home', icon: 'mdi-home', href:"#home" },
           { title: 'About', icon: 'mdi-account' },
           { title: 'Resume', icon: 'mdi-briefcase' },
-          { title: 'Skills', icon: 'mdi-head-cog' },
+          { title: 'Skills', icon: 'mdi-head-cog', href:"#skills" },
           { title: 'Projects', icon: 'mdi-pencil-ruler' },
           { title: 'Contact', icon: 'mdi-email' },
         ],

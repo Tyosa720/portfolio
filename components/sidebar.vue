@@ -1,6 +1,6 @@
 <template>
   <v-sheet
-    height="400"
+    height="350"
     class="overflow-hidden"
     dark
   >

@@ -5,7 +5,8 @@
       <Sidebar></Sidebar>
     </div>
     <div class="main-container">
-      <Skills id="skills"></Skills>
+      <Projects></Projects>
+      <Skills style="clear: both;" id="skills"></Skills>
       <Resume></Resume>
     </div>
   </div>
@@ -16,9 +17,10 @@ import Profil_card from '../components/profil_card.vue';
 import Sidebar from '../components/sidebar.vue';
 import Skills from '../components/skills.vue';
 import Resume from '../components/resume.vue';
+import Projects from '../components/projects.vue';
 export default {
     name: "IndexPage",
-    components: { Profil_card, Sidebar, Skills, Resume }
+    components: { Profil_card, Sidebar, Skills, Resume, Projects }
 }
 </script>
 
@@ -27,7 +29,7 @@ export default {
   position: fixed;
 }
 .dark{
-  background-color: #1f1f1f;
+  background-color: #1e1e1e;
 }
 body,main{
   height: 100vh;

@@ -1,13 +1,13 @@
 <template>
-  <div class="dark fill-height">
+  <div id="home" class="body-container dark fill-height">
     <div class="d-flex flex-wrap">
       <Profil_card></Profil_card>
       <Sidebar></Sidebar>
     </div>
     <div class="main-container">
-      <Projects></Projects>
+      <Projects id="projects"></Projects>
       <Skills style="clear: both;" id="skills"></Skills>
-      <Resume></Resume>
+      <Resume id="resume"></Resume>
     </div>
   </div>
 </template>
@@ -25,6 +25,9 @@ export default {
 </script>
 
 <style>
+.body-container{
+  user-select: none;
+}
 .fixed{
   position: fixed;
 }

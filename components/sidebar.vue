@@ -1,6 +1,5 @@
 <template>
   <v-sheet
-    height="350"
     class="overflow-hidden"
     dark
   >
@@ -12,7 +11,7 @@
         fixed
         dark
         @click.stop="drawer = !drawer"
-        style="top:30px;right: 30px;"
+        style="top:30px;right: 30px; background-color: #1e1e1e; z-index: 5;"
         class="sidebar-border"
         >
           <v-icon>
@@ -40,7 +39,7 @@
           v-for="item in items"
           :key="item.title"
           link
-          href="#skills"
+          :href="item.href"
         >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
@@ -62,11 +61,11 @@ export default {
         drawer: null,
         items: [
           { title: 'Home', icon: 'mdi-home', href:"#home" },
-          { title: 'About', icon: 'mdi-account' },
-          { title: 'Resume', icon: 'mdi-briefcase' },
+          { title: 'About', icon: 'mdi-account', href:"#about" },
+          { title: 'Resume', icon: 'mdi-briefcase',href:"#resume" },
           { title: 'Skills', icon: 'mdi-head-cog', href:"#skills" },
-          { title: 'Projects', icon: 'mdi-pencil-ruler' },
-          { title: 'Contact', icon: 'mdi-email' },
+          { title: 'Projects', icon: 'mdi-pencil-ruler', href:"#projects" },
+          { title: 'Contact', icon: 'mdi-email', href:"#contact" },
         ],
       }
     },

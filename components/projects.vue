@@ -1,5 +1,5 @@
 <template>
-    <v-card dark flat>
+    <v-card style="background: none;" transparent dark flat>
         <h1 class="ml-10">Development <span class="primary--text">Projects</span></h1>
             <v-card transparent flat :class="(index % 2 ? 'float-right ' : '') + 'ma-6 project-card-border pa-5 rounded-xl'" max-width="450px" v-for="(project, index) in projects" :key="index">
                 <div :class="index % 2 ? 'text-right' : ''">
@@ -7,7 +7,7 @@
                     <div class="project-description">
                         <p>{{ project.description }}</p>
                     </div>
-                    <v-chip v-for="(tech, index) in project.techno" :key="index"> {{ tech }} </v-chip>
+                    <v-chip class="mr-2" v-for="(tech, index) in project.techno" :key="index"> {{ tech }} </v-chip>
                 </div>
             </v-card>
     </v-card>

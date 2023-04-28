@@ -1,23 +1,21 @@
 <template>
-    <v-card>
-        <v-card-title>School and Experience</v-card-title>
-        <v-timeline>
+    <v-card dark>
+        <h1 class="ml-10">School & <span class="primary--text">Experience</span></h1>
+        <v-timeline
+        dense
+        >
             <v-timeline-item
             v-for="(year, i) in years"
             :key="i"
-            :color="year.color"
+            color="blue"
             small
             >
-            <template v-slot:opposite>
-                <span
-                :class="`headline font-weight-bold ${year.color}--text`"
-                v-text="year.year"
-                ></span>
-            </template>
+            
             <div class="py-4">
                 <h2 :class="`headline font-weight-light mb-4 ${year.color}--text`">
-                    {{ year.title }}
+                  {{ year.year }}
                 </h2>
+                <h3>{{ year.title}}</h3>
                 <div>
                     {{ year.description }}
                 </div>
@@ -32,26 +30,22 @@ export default {
       years: [
         {
           color: 'grey',
-          year: 'October 2022 - Today',
-          description:'Infime Architecture',
+          year: 'October 2022 - Early April 2023',
+          description:"Design of a secure interface for viewing deliverables for customers",
           title:'Fullstack developer apprentice'
         },
         {
-          color: 'green',
-          year: '1970',
+          color: 'grey',
+          year: 'April 4, 2022 - July 29, 2022',
+          description:"Creation of an information page for a TV. This one gathers different information like train schedules, company events, etc... As well as an administration page for modifications and an API to communicate between the two interfaces.",
+          title:'Fullstack developer intership'
         },
         {
-          color: 'pink',
-          year: '1980',
-        },
-        {
-          color: 'amber',
-          year: '1990',
-        },
-        {
-          color: 'orange',
-          year: '2000',
-        },
+          color: 'grey',
+          year: '2020 - 2025',
+          description:"Engineering degree in computer science ",
+          title:'CESI engineering school - Rouen'
+        }
       ],
     }),
 }

@@ -1,5 +1,5 @@
 <template>
-    <v-card outlined dark flat class="position-card rounded-xl border-card" width="100%" max-width="350px">
+    <v-card outlined dark flat class="ma-8 position-card rounded-xl border-card" width="100%" max-width="350px">
         <div class="d-flex justify-space-between">
             <v-card-title>
                 Théophile Lioppé 

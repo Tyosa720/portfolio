@@ -1,10 +1,13 @@
 <template>
-    <div class="pa-4 d-flex flex-wrap">
-        <v-card width="160px" v-for="(skill, index) in skills" :key="index" dark flat outlined class="ma-4 rounded-xl skill-card">
-            <img class="icon icon-size pa-4" :src="skill.src" alt="">
-            <h3 class="text-center mr-2 ml-2 mb-2">{{skill.titre}}</h3>
-        </v-card>
-    </div>
+    <v-card dark>
+        <h1 class="ml-10">My <span class="primary--text">Skills</span></h1>
+        <div class="pa-4 d-flex flex-wrap">
+            <v-card width="160px" v-for="(skill, index) in skills" :key="index" dark flat outlined class="ma-4 rounded-xl skill-card">
+                <img class="icon icon-size pa-4" :src="skill.src" alt="">
+                <h3 class="text-center mr-2 ml-2 mb-2">{{skill.titre}}</h3>
+            </v-card>
+        </div>
+    </v-card>
 </template>
 <script>
 export default {

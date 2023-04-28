@@ -4,7 +4,7 @@
       <Profil_card></Profil_card>
       <Sidebar></Sidebar>
     </div>
-    <div>
+    <div class="main-container">
       <Skills id="skills"></Skills>
       <Resume></Resume>
     </div>
@@ -34,5 +34,16 @@ body,main{
 }
 html{
   scroll-behavior: smooth;
+}
+.main-container{
+  margin-left: 400px;
+  float: right;
+}
+
+@media screen and (max-width:1220px) {
+  .main-container{
+    margin-left: 0px;
+  }
+  
 }
 </style>

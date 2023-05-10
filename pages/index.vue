@@ -5,9 +5,14 @@
       <Sidebar></Sidebar>
     </div>
     <div class="main-container">
-      <Projects id="projects"></Projects>
-      <Skills style="clear: both;" id="skills"></Skills>
+      <v-card class="ml-10 mt-16" dark transparent flat>
+        <h1 dark style="font-size: 48px !important;">Say Hi from <span class="primary--text">Théophile</span>, apprentice developer at CESI</h1>
+      </v-card>
+      <About id="about"></About>
       <Resume id="resume"></Resume>
+      <Skills style="clear: both;" id="skills"></Skills>
+      <Projects id="projects"></Projects>
+      <Contact></Contact>
     </div>
   </div>
 </template>
@@ -18,9 +23,11 @@ import Sidebar from '../components/sidebar.vue';
 import Skills from '../components/skills.vue';
 import Resume from '../components/resume.vue';
 import Projects from '../components/projects.vue';
+import About from '../components/about.vue';
+import Contact from '../components/contact.vue';
 export default {
     name: "IndexPage",
-    components: { Profil_card, Sidebar, Skills, Resume, Projects }
+    components: { Profil_card, Sidebar, Skills, Resume, Projects, About, Contact }
 }
 </script>
 

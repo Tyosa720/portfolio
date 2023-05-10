@@ -26,7 +26,7 @@
       temporary
       right
       style="position: fixed; width: 312px;"
-      class="pa-14"
+      class="pa-10"
     >
       <v-list-item>
         <v-list-item-content>
@@ -62,7 +62,7 @@ export default {
         items: [
           { title: 'Home', icon: 'mdi-home', href:"#home" },
           { title: 'About', icon: 'mdi-account', href:"#about" },
-          { title: 'Resume', icon: 'mdi-briefcase',href:"#resume" },
+          { title: 'School & Experience', icon: 'mdi-briefcase',href:"#resume" },
           { title: 'Skills', icon: 'mdi-head-cog', href:"#skills" },
           { title: 'Projects', icon: 'mdi-pencil-ruler', href:"#projects" },
           { title: 'Contact', icon: 'mdi-email', href:"#contact" },

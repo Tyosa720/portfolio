@@ -1,5 +1,5 @@
 <template>
-    <v-card dark>
+    <v-card style="background: none;" transparent flat dark>
         <h1 class="ml-10">My <span class="primary--text">Skills</span></h1>
         <div class="pa-4 d-flex flex-wrap">
             <v-card width="160px" v-for="(skill, index) in skills" :key="index" dark flat outlined class="ma-4 rounded-xl skill-card">

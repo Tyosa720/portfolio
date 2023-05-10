@@ -1,5 +1,5 @@
 <template>
-    <v-card dark>
+    <v-card style="background: none;" transparent flat dark>
         <h1 class="ml-10">School & <span class="primary--text">Experience</span></h1>
         <v-timeline
         dense

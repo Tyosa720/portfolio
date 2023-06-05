@@ -74,16 +74,17 @@ export default{
 <style>
 @media screen and (max-width:1220px){
     .position-card{
-        position: initial !important;
+        position: initial !;
         max-width: 700px !important;
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
     }
 }
-.position-card{
-    position: fixed;
-
+@media screen and (min-width:1220px){
+    .position-card{
+        position: fixed !important;
+    }
 }
 .border-card{
     border:1px solid #565656 !important;

@@ -1,6 +1,6 @@
 <template>
     <v-card style="background: none;" transparent dark flat>
-        <h1 class="ml-10">Development <span class="primary--text">Projects</span></h1>
+        <h1 class="ml-10 subtitle">Development <span class="primary--text">Projects</span></h1>
             <v-card style="clear: both;" transparent flat :class="(index % 2 ? 'float-right ' : 'float-left ml-10 ') + 'ma-3 project-card-border pa-5 rounded-xl'" max-width="600px" v-for="(project, index) in projects" :key="index">
                 <div :class="index % 2 ? 'text-right' : ''">
                     <h3>{{ project.title }}</h3>
@@ -8,7 +8,7 @@
                         <p>{{ project.description }}</p>
                     </div>
                     <v-chip class="mr-2" v-for="(tech, index) in project.techno" :key="index"> {{ tech }} </v-chip>
-                    <v-btn v-if="project.link" icon :href="project.link"><v-icon>mdi-open-in-new</v-icon></v-btn>
+                    <v-btn target="_blank" v-if="project.link" icon :href="project.link"><v-icon>mdi-open-in-new</v-icon></v-btn>
                 </div>
             </v-card>
     </v-card>
@@ -19,9 +19,14 @@ export default {
     return {
         projects:[
             {
+                title:"Customer area design",
+                description:"began designing a secure customer interface where customers would be able to check delivery times, make alterations, place orders, receive notifications and communicate information.",
+                techno:["NUXT","Vue","CSS","HTML","JavaScript", "Node"]
+            },
+            {
                 title:"Infime Project",
                 description:"Creation of an information page for a TV. This one gathers different information like train schedules, company events, etc... As well as an administration page for the modifications and an API to communicate between the two interfaces",
-                techno:["NUXT","Vue","CSS","HTML","JavaScript"]
+                techno:["NUXT","Vue","CSS","HTML","JavaScript", "Node"]
             },
             {
                 title:"EasySave",
